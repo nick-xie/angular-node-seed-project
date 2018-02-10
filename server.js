@@ -8,7 +8,7 @@ var port = process.env.PORT || 3002;
 
 app.use(morgan("dev"));
 app.use(helmet());
-app.use(express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/app/'));
 
 app.get("/", function(req, res) {
     console.log("getting index");
