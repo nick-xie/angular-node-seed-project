@@ -27,17 +27,16 @@ gulp.task('js', function() {
         return b.bundle()
             .pipe(source('bundle.js'))
             // buffer file contents
-            .pipe(buffer())
+            // .pipe(buffer())
             // include sourcemaps
             // .pipe(sourcemaps.init({ loadMaps: true }))
             // minify files with UglifyJS
-            .pipe(uglify({
-                mangle: false
-            }))
+            // .pipe(uglify({
+            //     mangle: false
+            // }))
             // log errors if they happen
             .on('error', function (err) {
 
-                // gutil.log(err.message);
                 this.emit('end');
             })
             // writes .map file
