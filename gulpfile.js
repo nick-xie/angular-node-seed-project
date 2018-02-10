@@ -31,15 +31,15 @@ gulp.task('js', function() {
             // include sourcemaps
             // .pipe(sourcemaps.init({ loadMaps: true }))
             // minify files with UglifyJS
-            // .pipe(uglify({
-            //     mangle: false
-            // }))
+            .pipe(uglify({
+                mangle: false
+            }))
             // log errors if they happen
-            // .on('error', function (err) {
+            .on('error', function (err) {
 
-            //     // gutil.log(err.message);
-            //     this.emit('end');
-            // })
+                // gutil.log(err.message);
+                this.emit('end');
+            })
             // writes .map file
             // .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest('app/js/bundle'));
