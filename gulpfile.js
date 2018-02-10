@@ -55,4 +55,6 @@ gulp.task('watch', function() {
 
 gulp.task('build', ['js']);
 
+gulp.task('heroku:production', ['build']);
+
 gulp.task('default', ['watch', 'js']);
