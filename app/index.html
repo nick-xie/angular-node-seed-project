@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/">
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Seed Project</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/icon.png">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="css/angular-material.css">
+
+</head>
+
+<body ng-controller="IndexCtrl as index">
+
+<div ng-cloak>
+  <div>
+    <h1>Seed app. Refer to the ReadME for info on setting this up!</h1>
+  </div>
+  <md-nav-bar md-selected-nav-item="$root.currentNav" nav-bar-aria-label="navigation links">
+    <md-nav-item md-nav-href="/" name="home">Home</md-nav-item>
+    <md-nav-item md-nav-href="counter" name="counter">Counter Demo</md-nav-item>
+  </md-nav-bar>
+
+  <div ng-view><!-- Partials --></div>
+</div>
+
+<script type="text/javascript" src="js/bundle/bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<div>
+  <h1>Your number: {{ counter.number }}</h1>
+  <md-input-container class="md-block">
+    <label>Adjusting value</label>
+    <input required type="number" ng-model="counter.adjuster" name="adjuster"/>
+
+    <md-button class="md-primary md-hue-1" ng-click="counter.add(counter.adjuster)">Add</md-button>
+    <md-button class="md-accent" ng-click="counter.subtract(counter.adjuster)">Subtract</md-button>
+    <p>Last adjustment: {{ counter.lastUpdate }}</p>
+  </md-input-container>
+</div>

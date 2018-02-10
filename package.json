@@ -1,0 +1,44 @@
+{
+  "name": "Angular-Node-Seed-Project",
+  "version": "1.0.0",
+  "engines": {
+      "node": "7.7.2"
+  },
+  "description": "A starting point for fullstack applications",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-animate": "^1.6.8",
+    "angular-aria": "^1.6.8",
+    "angular-material": "^1.1.5",
+    "angular-messages": "^1.6.8",
+    "angular-route": "^1.6.8",
+    "browserify": "^15.0.0",
+    "express": "^4.16.2",
+    "gulp-uglify": "^3.0.0",
+    "helmet": "^3.9.0",
+    "lodash": "^4.17.4",
+    "merge-stream": "^1.0.1",
+    "morgan": "^1.9.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "seedproject"
+  ],
+  "author": "nick xie",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
